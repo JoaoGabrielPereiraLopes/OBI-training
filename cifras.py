@@ -26,13 +26,12 @@ for x in P:
                     distancia=modulo(index-vogais[y])
                 elif modulo(index-vogais[y])==distancia:
                     if vogais[y]<vogais[letraatual]:
-                        print(y)
                         letraatual=y
                         distancia=modulo(index-vogais[y])
             else:
                 distancia=modulo(index-vogais[y])
                 letraatual=y
-        cifrado+=y
+        cifrado+=letraatual
         if x!="Z":
             cifrado+=consoantes[consoantes.find(x)+1]
         else:
