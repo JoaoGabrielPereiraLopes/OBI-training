@@ -2,10 +2,10 @@ P=input()
 alfabeto='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 vogais={'A':alfabeto.find('A'),'E':alfabeto.find('E'),'I':alfabeto.find('I'),'O':alfabeto.find('O'),'U':alfabeto.find('U')}
 consoantes = [x for x in alfabeto if x not in vogais.keys()]
-sting=''
+string=''
 for x in consoantes:
     sting+=x
-consoantes=sting
+consoantes=string
 cifrado=''
 def modulo(n):
     if n<0:
